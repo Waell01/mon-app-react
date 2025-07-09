@@ -2,11 +2,7 @@ pipeline {
   agent any
 
   stages {
-    stage('Clonage du code') {
-      steps {
-        git 'https://github.com/Waell01/mon-app-react.git'
-      }
-    }
+   
 
     stage('Installation des dépendances') {
       steps {
