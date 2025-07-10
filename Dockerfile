@@ -1,5 +1,5 @@
 # Étape 1 : builder l'app avec Node.js
-FROM node:18 as build
+FROM node:18 AS build
 
 WORKDIR /app
 
