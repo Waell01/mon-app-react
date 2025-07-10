@@ -2,13 +2,13 @@ pipeline {
   agent any
 
   tools {
-    nodejs 'node17' // 🟢 nom que tu as mis dans Jenkins
+    nodejs 'node17' 
   }
 
   stages {
     stage('Installation des dépendances') {
       steps {
-        sh 'npm install'
+        bat 'npm install'
       }
     }
 
@@ -20,7 +20,7 @@ pipeline {
 
     stage('Fin') {
       steps {
-        echo '✅ Build terminé avec succès !'
+        echo ' Build terminé avec succès !'
       }
     }
   }
